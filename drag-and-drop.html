@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemist Game ⚗️</title>
+    <link rel="stylesheet" href="drag-and-drop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!--                     HEADER                        -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>⚗️ Alchemist</h1>
+        </div>
+        <nav class="main-navigation">
+            <ul class="menu-list">
+                <li><button class="menu-btn active">🏠 Home</button></li>
+                <li><button class="menu-btn">🎒 Inventory</button></li>
+                <li><button class="menu-btn">📜 Recipes</button></li>
+                <li><button class="menu-btn">⚙️ Settings/button></li>
+                <li><button class="menu-btn">❓ Help</button></li>  <>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--                     MAIN                          -->
+<main>
+
+    <!-- ===== Left panel: Laboratory ===== -->
+    <section class="laboratory">
+        <h2>🧪 Laboratory</h2>
+        <p class="lab-description"> Combine elements to discover new ones!
+            Simply drag and drop two elements into the mixing area to see the result.</p>
+
+        <!-- Basic elements available to the player -->
+        <div class="elements-container">
+            <div class="element" data-name="Fire" draggable="true">🔥 Fire</div>
+            <div class="element" data-name="Water" draggable="true">💧 Water</div>
+            <div class="element" data-name="Air" draggable="true">🌬️ Air</div>
+            <div class="element" data-name="Earth" draggable="true">🌍 Earth</div>
+            <div class="element hidden" data-name="Cold" draggable="true">❄️ Cold</div>
+            <div class="element hidden" data-name="Steam" draggable="true">💨 Steam</div>
+            <div class="element hidden" data-name="Clay" draggable="true">🪵 Clay</div>
+            <div class="element hidden" data-name="Energy" draggable="true">⚡ Energy</div>
+            <div class="element hidden" data-name="Dust" draggable="true">🌫️ Dust</div>
+            <div class="element hidden" data-name="Lava" draggable="true">🌋 Lava</div>
+            <div class="element hidden" data-name="Cloud" draggable="true">☁️ Cloud</div>
+            <div class="element hidden" data-name="Rain" draggable="true">🌧️ Rain</div>
+            <div class="element hidden" data-name="Plant" draggable="true">🌱 Plant</div>
+            <div class="element hidden" data-name="Ash" draggable="true">🍂 Ash</div>
+            <div class="element hidden" data-name="Metal" draggable="true">🪨 Metal</div>
+            <div class="element hidden" data-name="Tool" draggable="true">⚙️ Tool</div>
+            <div class="element hidden" data-name="Grass" draggable="true">🌾 Grass</div>
+            <div class="element hidden" data-name="Life" draggable="true">🐄 Life</div>
+            <div class="element hidden" data-name="Human" draggable="true">🧠 Human</div>
+            <div class="element hidden" data-name="Civilization" draggable="true">🏙️ Civilization</div>
+        </div>
+
+        <!-- Result of the combination -->
+        <div id="mixing-zone">
+            <h3>Mixing Zone</h3>
+            <p>Drag two elements here</p>
+        </div>
+    </section>
+    <!-- ===== Right panel: Inventory and Recipes ===== -->
+    <aside class="sidebar">
+        <div class="inventory-section">
+            <h3>🎒 Inventory</h3>
+            <ul class="inventory-list">
+                <li>🔥 Fire</li>
+                <li>💧 Water</li>
+                <li>🌬️ Air</li>
+                <li>🌍 Earth</li>
+                <li>💨 Steam</li>
+                <li> 🪵 Clay</li>
+                <li>⚡ Energy</li>
+                <li> 🌫️ Dust</li>
+                <li>🌋 Lava</li>
+                <li>☁️ Cloud</li>
+                <li> 🌧️ Rain</li>
+                <li>❄️ Cold </li>
+                <li> 🌱 Plant</li>
+                <li>🍂 Ash</li>
+                <li> 🪨 Metal</li>
+                <li>⚙️ Tool</li>
+                <li>🌾 Grass</li>
+                <li> 🐄 Life</li>
+                <li>🧠 Human </li>
+                <li> 🏙️ Civilization</li>
+            </ul>
+        </div>
+
+        <!-- Known recipes -->
+        <div class="recipes-section">
+            <h3>📜 Known Recipes</h3>
+            <ul class="recipes-list">
+                <li>🔥 Fire + 💧 Water = 💨 Steam</li>
+                <li>🌍 Earth + 💧 Water = 🪵 Clay</li>
+                <li>🌬️ Air + 🔥 Fire = ⚡ Energy</li>
+                <li>🌬️ Air + 🌍 Earth = 🌫️ Dust</li>
+                <li>🔥 Fire + 🌍 Earth = 🌋 Lava</li>
+                <li>💧 Water + 🌬️ Air = ☁️ Cloud</li>
+                <li>☁️ Cloud + 💧 Water = 🌧️ Rain</li>
+                <li>🌧️ Rain + 🌍 Earth = 🌱 Plant</li>
+                <li>🌱 Plant + 🔥 Fire = 🍂 Ash</li>
+                <li>🌍 Earth + ⚡ Energy = 🪨 Metal</li>
+                <li>🔥 Fire + 🪨 Metal = ⚙️ Tool</li>
+                <li>>🌱 Plant + 💧 Water = 🌾 Grass</li>
+                <li>🌾 Grass + 🌍 Earth = 🐄 Life</li>
+                <li>🐄 Life + ⚡ Energy = 🧠 Human</li>
+                <li>🧠 Human + ⚙️ Tool = 🏙️ Civilization</li>
+            </ul>
+        </div>
+        <!-- Control buttons -->
+        <div class="control-panel">
+            <h3>⚙️ Controls</h3>
+            <button class="control-btn">Clear Zone</button>
+            <button class="control-btn">Save Game</button>
+            <button class="control-btn">Load Game</button>
+        </div>
+    </aside>
+
+</main>
+
+<!--                     FOOTER                        -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <p>© 2025 “Alchemist” Game</p>
+            <p>Created with love and a bit of magic 🧙‍♂️</p>
+        </div>
+        <div class="footer-right">
+            <p>Developer contacts:</p>
+            <ul class="social-links">
+                <li><a href="#">RIRI</a></li>
+                <li><a href="#">FARA</a></li>
+                <li><a href="#">DEN</a></li>
+                <li><a href="#">ARLASK</a></li>
+                <li><a href="#">ZHENYA</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./drag-and-drop.js"></script>
+</body>
+</html>
