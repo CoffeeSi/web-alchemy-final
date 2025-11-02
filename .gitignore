@@ -1,7 +1,9 @@
 ### IntelliJ IDEA ###
+.idea/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+Alchemist-DaD.iml
 
 ### Eclipse ###
 .apt_generated
@@ -27,3 +29,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
