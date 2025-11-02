@@ -59,4 +59,3 @@ themeBtn.addEventListener('click', () => {
   const isDark = body.classList.toggle('dark-mode');
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
->>>>>>> Stashed changes
