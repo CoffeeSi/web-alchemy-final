@@ -46,29 +46,14 @@ menuBtns.forEach(btn => {
     });
 });
 
-const fromHelpToHome = document.querySelector('#toHome');
 const fromHomeToHelp = document.querySelector('#toHelp');
-
-function returnToHome(){
-
-    window.location.href = 'index.html';
-
-}
 
 function returnToHelp(){
     console.log("salam")
     window.location.href = 'instructions.html';
-
 }
 
-if (fromHomeToHelp) {
-    fromHomeToHelp.addEventListener("click", returnToHelp);
-} else {
-    console.warn("#toHelp not found in DOM");
-}
-
-fromHelpToHome.addEventListener("click", returnToHome);
-
+if (fromHomeToHelp) fromHomeToHelp.addEventListener("click", returnToHelp);
 
 initDragDrop();
 initToggleTheme();
