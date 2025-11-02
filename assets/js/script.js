@@ -1,4 +1,7 @@
+import { initDragDrop } from './drag-drop.js';
 
+// Clickable buttons
+// жмешь - скрывается вся ненужная информация.
 const menuBtns = document.querySelectorAll('.menu-btn');
 
 const inventorySection = document.querySelector('.inventory-section');
@@ -44,7 +47,6 @@ menuBtns.forEach(btn => {
     });
 });
 
-
 const fromHelpToHome = document.querySelector('#toHome');
 const fromHomeToHelp = document.querySelector('#toHelp');
 
@@ -69,3 +71,4 @@ if (fromHomeToHelp) {
 fromHelpToHome.addEventListener("click", returnToHome);
 
 
+initDragDrop();
