@@ -260,3 +260,68 @@ footer{
 .social-links a:hover{
     color:#ffde8b;
 }
+
+/* theme mode */
+
+body.light-mode {
+  background: beige;
+  color: saddlebrown;
+}
+
+body.dark-mode {
+  background: black;
+  color: rgb(243, 216, 167);
+}
+
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: rgb(160, 82, 45); 
+  color: rgb(243, 216, 167);
+}
+
+body.dark-mode .laboratory,
+body.dark-mode .sidebar {
+  background: rgb(40, 35, 25); 
+  border-color: rgb(205, 133, 63);
+}
+
+body.dark-mode .element {
+  background: rgb(222, 184, 135); 
+  color: rgb(255, 248, 220);
+  border-color: rgb(202, 132, 62);
+}
+
+body.dark-mode .menu-btn.active {
+  background: rgb(243, 216, 167);;
+  color: rgb(139, 69, 19);
+}
+
+body.dark-mode .menu-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgb(210, 180, 140);
+}
+
+body.dark-mode .control-btn {
+  background: peru;
+  color: rgb(243, 216, 167);;
+}
+
+body.dark-mode .control-btn:hover {
+  background: rgb(218, 165, 32);;
+}
+
+body.dark-mode a {
+  color: rgb(255, 215, 0);
+}
+
+#theme-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
