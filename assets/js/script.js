@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // Clickable buttons
 // жмешь - скрывается вся ненужная информация.
 const menuBtns = document.querySelectorAll('.menu-btn');
