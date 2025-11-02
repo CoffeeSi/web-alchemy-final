@@ -1,10 +1,11 @@
-// Clickable buttons
-// жмешь - скрывается вся ненужная информация.
+
 const menuBtns = document.querySelectorAll('.menu-btn');
 
 const inventorySection = document.querySelector('.inventory-section');
 const recipesSection = document.querySelector('.recipes-section');
 const controlPanel = document.querySelector('.control-panel');
+
+
 
 function showPanel(panel) {
     inventorySection.style.display = 'none';
@@ -42,3 +43,29 @@ menuBtns.forEach(btn => {
         else showPanel('home'); 
     });
 });
+
+
+const fromHelpToHome = document.querySelector('#toHome');
+const fromHomeToHelp = document.querySelector('#toHelp');
+
+function returnToHome(){
+
+    window.location.href = 'index.html';
+
+}
+
+function returnToHelp(){
+    console.log("salam")
+    window.location.href = 'instructions.html';
+
+}
+
+if (fromHomeToHelp) {
+    fromHomeToHelp.addEventListener("click", returnToHelp);
+} else {
+    console.warn("#toHelp not found in DOM");
+}
+
+fromHelpToHome.addEventListener("click", returnToHome);
+
+
