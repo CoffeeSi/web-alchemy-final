@@ -129,7 +129,7 @@ main{
     transform: scale(1.08);
     background: linear-gradient(145deg, #ffe9a3, #f6d47a);
 }
-.mixing-zone{
+#mixing-zone{
     border: 3px dashed #c5a86d;
     border-radius: 15px;
     padding: 2rem;
@@ -138,7 +138,7 @@ main{
     color:#6b4a1b;
     font-style:italic;
 }
-.mixing-zone:hover{
+#mixing-zone:hover{
     background: rgba(255, 255, 245, 0.8);
 }
 .result-zone{
@@ -154,6 +154,36 @@ main{
     border-radius: 10px;
     padding: 1rem;
     border: 2px solid #d4b671 ;
+}
+
+
+/* some styles for drag and drop */
+.hidden {
+    display: none;
+}
+.mix-symbol {
+    font-weight: bold;
+    color: #a57b2c;
+    font-size: 1.1em;
+}
+.mixing-element {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #f8e4b3;
+    border-radius: 6px;
+    border: 1px solid #d0b273;
+    font-size: 0.95em;
+}
+.mix-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: 2px dashed #d0b273;
+    border-radius: 8px;
+    background-color: #fdf6e3;
+    margin-top: 10px;
 }
 
 /* SIDEBAR — Inventory & Recipes*/

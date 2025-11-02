@@ -1,5 +1,6 @@
-<<<<<<< Updated upstream
-=======
+import { initDragDrop } from './drag-drop.js';
+import { initToggleTheme } from './theme.js';
+
 // Clickable buttons
 // жмешь - скрывается вся ненужная информация.
 const menuBtns = document.querySelectorAll('.menu-btn');
@@ -45,18 +46,29 @@ menuBtns.forEach(btn => {
     });
 });
 
-// modes dark/light //
-const themeBtn = document.getElementById('theme-change');
-const body = document.body;
+const fromHelpToHome = document.querySelector('#toHome');
+const fromHomeToHelp = document.querySelector('#toHelp');
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-  body.classList.add('dark-mode');
+function returnToHome(){
+
+    window.location.href = 'index.html';
+
 }
 
+function returnToHelp(){
+    console.log("salam")
+    window.location.href = 'instructions.html';
 
-themeBtn.addEventListener('click', () => {
-  const isDark = body.classList.toggle('dark-mode');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-});
->>>>>>> Stashed changes
+}
+
+if (fromHomeToHelp) {
+    fromHomeToHelp.addEventListener("click", returnToHelp);
+} else {
+    console.warn("#toHelp not found in DOM");
+}
+
+fromHelpToHome.addEventListener("click", returnToHome);
+
+
+initDragDrop();
+initToggleTheme();
