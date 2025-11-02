@@ -1,3 +1,5 @@
+import { initDragDrop } from './drag-drop.js';
+
 // Clickable buttons
 // жмешь - скрывается вся ненужная информация.
 const menuBtns = document.querySelectorAll('.menu-btn');
@@ -42,3 +44,5 @@ menuBtns.forEach(btn => {
         else showPanel('home'); 
     });
 });
+
+initDragDrop();

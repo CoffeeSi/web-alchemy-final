@@ -40,26 +40,26 @@
         <div class="element" data-name="Water" draggable="true">💧 Water</div>
         <div class="element" data-name="Air" draggable="true">🌬️ Air</div>
         <div class="element" data-name="Earth" draggable="true">🌍 Earth</div>
-        <div class="element" data-name="Cold" draggable="true">❄️ Cold</div>
-        <div class="element" data-name="Steam" draggable="true">💨 Steam</div>
-        <div class="element" data-name="Clay" draggable="true">🪵 Clay</div>
-        <div class="element" data-name="Energy" draggable="true">⚡ Energy</div>
-        <div class="element" data-name="Dust" draggable="true">🌫️ Dust</div>
-        <div class="element" data-name="Lava" draggable="true">🌋 Lava</div>
-        <div class="element" data-name="Cloud" draggable="true">☁️ Cloud</div>
-        <div class="element" data-name="Rain" draggable="true">🌧️ Rain</div>
-        <div class="element" data-name="Plant" draggable="true">🌱 Plant</div>
-        <div class="element" data-name="Ash" draggable="true">🍂 Ash</div>
-        <div class="element" data-name="Metal" draggable="true">🪨 Metal</div>
-        <div class="element" data-name="Tool" draggable="true">⚙️ Tool</div>
-        <div class="element" data-name="Grass" draggable="true">🌾 Grass</div>
-        <div class="element" data-name="Life" draggable="true">🐄 Life</div>
-        <div class="element" data-name="Human" draggable="true">🧠 Human</div>
-        <div class="element" data-name="Civilization" draggable="true">🏙️ Civilization</div>
+        <div class="element hidden" data-name="Cold" draggable="true">❄️ Cold</div>
+        <div class="element hidden" data-name="Steam" draggable="true">💨 Steam</div>
+        <div class="element hidden" data-name="Clay" draggable="true">🪵 Clay</div>
+        <div class="element hidden" data-name="Energy" draggable="true">⚡ Energy</div>
+        <div class="element hidden" data-name="Dust" draggable="true">🌫️ Dust</div>
+        <div class="element hidden" data-name="Lava" draggable="true">🌋 Lava</div>
+        <div class="element hidden" data-name="Cloud" draggable="true">☁️ Cloud</div>
+        <div class="element hidden" data-name="Rain" draggable="true">🌧️ Rain</div>
+        <div class="element hidden" data-name="Plant" draggable="true">🌱 Plant</div>
+        <div class="element hidden" data-name="Ash" draggable="true">🍂 Ash</div>
+        <div class="element hidden" data-name="Metal" draggable="true">🪨 Metal</div>
+        <div class="element hidden" data-name="Tool" draggable="true">⚙️ Tool</div>
+        <div class="element hidden" data-name="Grass" draggable="true">🌾 Grass</div>
+        <div class="element hidden" data-name="Life" draggable="true">🐄 Life</div>
+        <div class="element hidden" data-name="Human" draggable="true">🧠 Human</div>
+        <div class="element hidden" data-name="Civilization" draggable="true">🏙️ Civilization</div>
       </div>
 
       <!-- Result of the combination -->
-      <div class="mixing-zone">
+      <div id="mixing-zone">
         <h3>Mixing Zone</h3>
         <p>Drag two elements here</p>
       </div>
@@ -102,7 +102,7 @@
             <li>🌬️ Air + 🌍 Earth = 🌫️ Dust</li>
             <li>🔥 Fire + 🌍 Earth = 🌋 Lava</li>
             <li>💧 Water + 🌬️ Air = ☁️ Cloud</li>
-            <li>☁️ Cloud + ❄️ Cold = 🌧️ Rain</li>
+            <li>☁️ Cloud + 💧 Water = 🌧️ Rain</li>
             <li>🌧️ Rain + 🌍 Earth = 🌱 Plant</li>
             <li>🌱 Plant + 🔥 Fire = 🍂 Ash</li>
             <li>🌍 Earth + ⚡ Energy = 🪨 Metal</li>
@@ -146,6 +146,6 @@
 
   <!-- scripting -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script type="module" src="assets/js/script.js"></script>
 </body>
 </html>
