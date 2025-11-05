@@ -398,12 +398,6 @@ body.dark-mode .mix-container{
 
 }
 
-body.dark-mode .mix-container{
-    color: #ffffff;
-    background-color: 292a2c;
-    border: 2px,dashed,#323233;
-}
-
 body.dark-mode .mixing-element{
     color: #ffffff;
     background-color: rgb(40, 39, 39);
