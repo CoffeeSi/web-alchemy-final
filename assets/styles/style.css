@@ -77,6 +77,19 @@ header{
     color:#4b2e09;
 }
 
+.theme-btn {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 8px;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+.theme-btn:hover{
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+}
+
 /* MAIN LAYOUT*/
 main{
     flex:1;
@@ -299,10 +312,9 @@ body.light-mode {
 }
 
 body.dark-mode {
-  background: 	#101112;
+  background: #101112;
   color: white;
 }
-
 
 body.dark-mode header,
 body.dark-mode footer {
@@ -355,6 +367,10 @@ body.dark-mode .menu-btn {
   border-color: rgb(67, 66, 66);
   color: white;
 }
+body.dark-mode .theme-btn {
+  background: #151414;
+  border-color: rgb(67, 66, 66);
+}
 body.dark-mode .menu-btn.active {
   background: rgb(190, 188, 188);
   color: black;
@@ -371,17 +387,6 @@ body.dark-mode .control-btn:hover {
 
 body.dark-mode a {
   color: white;
-}
-
-#theme-icon {
-  height: 20px;
-  width: 20px;
-}
-
-.theme-toggle button {
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 body.dark-mode #mixing-zone{
@@ -415,7 +420,7 @@ body.dark-mode .inventory-list{
 
 body.dark-mode .recipes-list{
     background-color: #161718;
-  
+}
   
 @media (max-width:992px){
     main{
@@ -437,7 +442,8 @@ body.dark-mode .recipes-list{
         gap: 1rem;
     }
 }
-@media(max-width: 600px){
+
+@media (max-width: 600px){
     header{
         padding:0.8rem 1rem;
     }
