@@ -1,5 +1,7 @@
-// Clickable buttons
-// жмешь - скрывается вся ненужная информация.
+import { initDragDrop } from './drag-drop.js';
+import { initToggleTheme } from './theme.js';
+
+
 const menuBtns = document.querySelectorAll('.menu-btn');
 
 const inventorySection = document.querySelector('.inventory-section');
@@ -43,17 +45,15 @@ menuBtns.forEach(btn => {
     });
 });
 
-// modes dark/light //
-const themeBtn = document.getElementById('theme-change');
-const body = document.body;
+const fromHomeToHelp = document.querySelector('#toHelp');
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-  body.classList.add('dark-mode');
+function returnToHelp(){
+    console.log("salam")
+    window.location.href = 'instructions.html';
 }
 
+if (fromHomeToHelp) fromHomeToHelp.addEventListener("click", returnToHelp);
 
-themeBtn.addEventListener('click', () => {
-  const isDark = body.classList.toggle('dark-mode');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-});
+initDragDrop();
+initToggleTheme();
+

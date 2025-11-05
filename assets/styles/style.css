@@ -129,7 +129,7 @@ main{
     transform: scale(1.08);
     background: linear-gradient(145deg, #ffe9a3, #f6d47a);
 }
-.mixing-zone{
+#mixing-zone{
     border: 3px dashed #c5a86d;
     border-radius: 15px;
     padding: 2rem;
@@ -138,7 +138,7 @@ main{
     color:#6b4a1b;
     font-style:italic;
 }
-.mixing-zone:hover{
+#mixing-zone:hover{
     background: rgba(255, 255, 245, 0.8);
 }
 .result-zone{
@@ -154,6 +154,36 @@ main{
     border-radius: 10px;
     padding: 1rem;
     border: 2px solid #d4b671 ;
+}
+
+
+/* some styles for drag and drop */
+.hidden {
+    display: none;
+}
+.mix-symbol {
+    font-weight: bold;
+    color: #a57b2c;
+    font-size: 1.1em;
+}
+.mixing-element {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #f8e4b3;
+    border-radius: 6px;
+    border: 1px solid #d0b273;
+    font-size: 0.95em;
+}
+.mix-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: 2px dashed #d0b273;
+    border-radius: 8px;
+    background-color: #fdf6e3;
+    margin-top: 10px;
 }
 
 /* SIDEBAR — Inventory & Recipes*/
@@ -264,55 +294,83 @@ footer{
 /* theme mode */
 
 body.light-mode {
-  background: beige;
-  color: saddlebrown;
+  background: white;
+  color: black;
 }
 
 body.dark-mode {
-  background: black;
-  color: rgb(243, 216, 167);
+  background: 	#101112;
+  color: white;
 }
 
 
 body.dark-mode header,
 body.dark-mode footer {
-  background: rgb(160, 82, 45); 
-  color: rgb(243, 216, 167);
+  background: rgb(29, 28, 28);
+  color: white;
 }
 
 body.dark-mode .laboratory,
 body.dark-mode .sidebar {
-  background: rgb(40, 35, 25); 
-  border-color: rgb(205, 133, 63);
+  background: rgb(29, 28, 28);
+  border-color: rgb(18, 17, 17);
 }
 
+body.dark-mode .laboratory h2,
+body.dark-mode .inventory-section h3,
+body.dark-mode .recipes-section h3,
+body.dark-mode .control-panel h3 {
+  color: white;
+}
+
+body.dark-mode .laboratory .lab-description,
+body.dark-mode .inventory-section,
+body.dark-mode .recipes-section,
+body.dark-mode .control-panel {
+  color: white;
+}
+
+body.dark-mode .laboratory{
+    box-shadow: 0 0 20px rgba(54, 53, 53, 0.3);
+}
+body.dark-mode .sidebar{
+    box-shadow: 0 0 20px rgba(54, 53, 53, 0.3);
+}
+
+body.dark-mode .inventory-section,
+body.dark-mode .recipes-section{
+    scrollbar-color: #1f1f1e #444442;
+}
 body.dark-mode .element {
-  background: rgb(222, 184, 135); 
-  color: rgb(255, 248, 220);
-  border-color: rgb(202, 132, 62);
+  background: 	#131415;
+  color: white;
+  border-color: lightgray;
 }
-
-body.dark-mode .menu-btn.active {
-  background: rgb(243, 216, 167);;
-  color: rgb(139, 69, 19);
+body.dark-mode .element:hover {
+  background: rgb(119, 118, 118);
 }
 
 body.dark-mode .menu-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgb(210, 180, 140);
+  background: #151414;
+  border-color: rgb(67, 66, 66);
+  color: white;
+}
+body.dark-mode .menu-btn.active {
+  background: rgb(190, 188, 188);
+  color: black;
 }
 
 body.dark-mode .control-btn {
-  background: peru;
-  color: rgb(243, 216, 167);;
+  background: black;
+  color: white;
 }
 
 body.dark-mode .control-btn:hover {
-  background: rgb(218, 165, 32);;
+  background: rgb(115, 113, 113);
 }
 
 body.dark-mode a {
-  color: rgb(255, 215, 0);
+  color: white;
 }
 
 #theme-icon {
@@ -324,4 +382,43 @@ body.dark-mode a {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+body.dark-mode #mixing-zone{
+    color: rgb(203, 197, 197);
+    background-color: #292a2c;
+    border-color: rgb(51, 48, 48);
+}
+
+body.dark-mode .mix-container{
+    color: #131212;
+    background-color: #292a2c;
+    border-color: rgb(6, 6, 6);
+    border: dotted;
+
+}
+
+body.dark-mode .mix-container{
+    color: #ffffff;
+    background-color: 292a2c;
+    border: 2px,dashed,#323233;
+}
+
+body.dark-mode .mixing-element{
+    color: #ffffff;
+    background-color: rgb(40, 39, 39);
+    border: 1px,solid,#353232;
+}
+
+body.dark-mode .mix-symbol{
+    color: #121111;
+}
+
+
+body.dark-mode .inventory-list{
+    background-color: #161718;
+}
+
+body.dark-mode .recipes-list{
+    background-color: #161718;
 }
