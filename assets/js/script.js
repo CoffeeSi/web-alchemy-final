@@ -1,8 +1,7 @@
 import { initDragDrop } from './drag-drop.js';
 import { initToggleTheme } from './theme.js';
 
-// Clickable buttons
-// жмешь - скрывается вся ненужная информация.
+
 const menuBtns = document.querySelectorAll('.menu-btn');
 
 const inventorySection = document.querySelector('.inventory-section');
@@ -57,3 +56,4 @@ if (fromHomeToHelp) fromHomeToHelp.addEventListener("click", returnToHelp);
 
 initDragDrop();
 initToggleTheme();
+
