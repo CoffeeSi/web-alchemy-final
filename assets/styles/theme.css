@@ -1,0 +1,117 @@
+/* theme mode */
+
+body.light-mode {
+  background: white;
+  color: black;
+}
+
+body.dark-mode {
+  background: #101112;
+  color: white;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: rgb(29, 28, 28);
+  color: white;
+}
+
+body.dark-mode .laboratory,
+body.dark-mode .sidebar {
+  background: rgb(29, 28, 28);
+  border-color: rgb(18, 17, 17);
+}
+
+body.dark-mode .laboratory h2,
+body.dark-mode .inventory-section h3,
+body.dark-mode .recipes-section h3,
+body.dark-mode .control-panel h3 {
+  color: white;
+}
+
+body.dark-mode .laboratory .lab-description,
+body.dark-mode .inventory-section,
+body.dark-mode .recipes-section,
+body.dark-mode .control-panel {
+  color: white;
+}
+
+body.dark-mode .laboratory{
+    box-shadow: 0 0 20px rgba(54, 53, 53, 0.3);
+}
+body.dark-mode .sidebar{
+    box-shadow: 0 0 20px rgba(54, 53, 53, 0.3);
+}
+
+body.dark-mode .inventory-section,
+body.dark-mode .recipes-section{
+    scrollbar-color: #1f1f1e #444442;
+}
+body.dark-mode .element {
+  background: 	#131415;
+  color: white;
+  border-color: lightgray;
+}
+body.dark-mode .element:hover {
+  background: rgb(119, 118, 118);
+}
+
+body.dark-mode .menu-btn {
+  background: #151414;
+  border-color: rgb(67, 66, 66);
+  color: white;
+}
+body.dark-mode .theme-btn {
+  background: #151414;
+  border-color: rgb(67, 66, 66);
+}
+body.dark-mode .menu-btn.active {
+  background: rgb(190, 188, 188);
+  color: black;
+}
+
+body.dark-mode .control-btn {
+  background: black;
+  color: white;
+}
+
+body.dark-mode .control-btn:hover {
+  background: rgb(115, 113, 113);
+}
+
+body.dark-mode a {
+  color: white;
+}
+
+body.dark-mode #mixing-zone{
+    color: rgb(203, 197, 197);
+    background-color: #292a2c;
+    border-color: rgb(51, 48, 48);
+}
+
+body.dark-mode .mix-container{
+    color: #131212;
+    background-color: #292a2c;
+    border-color: rgb(6, 6, 6);
+    border: dotted;
+
+}
+
+body.dark-mode .mixing-element{
+    color: #ffffff;
+    background-color: rgb(40, 39, 39);
+    border: 1px,solid,#353232;
+}
+
+body.dark-mode .mix-symbol{
+    color: #121111;
+}
+
+
+body.dark-mode .inventory-list{
+    background-color: #161718;
+}
+
+body.dark-mode .recipes-list{
+    background-color: #161718;
+}

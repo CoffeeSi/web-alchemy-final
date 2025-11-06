@@ -6,13 +6,13 @@ document.getElementById("signup-form").addEventListener("submit", function(e) {
     const password = document.getElementById("signup-password").value.trim();
 
     if (localStorage.getItem(email)) {
-    alert("This user already exists!");
-    return;
+        alert("This user already exists!");
+        return;
     }
 
     const user = { name, email, password };
     localStorage.setItem(email, JSON.stringify(user));
 
     alert("Registration successful");
-    window.location.href = "log-in.html";
+    window.location.href = "login.html";
 });
