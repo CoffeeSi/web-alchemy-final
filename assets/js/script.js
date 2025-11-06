@@ -57,6 +57,18 @@ function returnToHelp(){
 
 if (fromHomeToHelp) fromHomeToHelp.addEventListener("click", returnToHelp);
 
+
+//2 redirect to log in page
+
+const fromHomeToLogIn = document.querySelector("#log-in-page");
+
+function returnToLogIn(){
+    window.location.href = "log_in.html";
+}
+
+if(fromHomeToLogIn) fromHomeToLogIn.addEventListener("click", returnToLogIn);
+
+
 initDragDrop();
 initToggleTheme();
 
