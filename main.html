@@ -60,7 +60,7 @@
         cursor: pointer;
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         transition: all 0.3s ease;
-        animation: bounceIn 2s ease forwards;
+        animation: bounceIn 4s ease forwards;
         opacity:0;
     }
     .enter-btn:hover{
@@ -94,6 +94,26 @@
     @media (max-width:576px){
         h1{font-size:2.5rem;}
         .enter-btn{font-size:1.2rem; padding:0.8rem 2rem;}
+    }
+
+    .skip-btn{
+        background: linear-gradient(145deg, #d6d677,#b99451);
+        color:#fff;
+        font-weight: bold;
+        font-size: 1rem;
+        padding:1rem 3rem;
+        border: none;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        animation: bounceIn 4s ease forwards;
+        opacity:0;
+    }
+    .skip-btn:hover{
+        background: linear-gradient(145deg,#e8c884, #c49b57);
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
 
   </style>
