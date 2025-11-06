@@ -77,6 +77,19 @@ header{
     color:#4b2e09;
 }
 
+.theme-btn {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 8px;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+.theme-btn:hover{
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+}
+
 /* MAIN LAYOUT*/
 main{
     flex:1;
@@ -294,67 +307,121 @@ footer{
 /* theme mode */
 
 body.light-mode {
-  background: beige;
-  color: saddlebrown;
+  background: white;
+  color: black;
 }
 
 body.dark-mode {
-  background: black;
-  color: rgb(243, 216, 167);
+  background: #101112;
+  color: white;
 }
-
 
 body.dark-mode header,
 body.dark-mode footer {
-  background: rgb(160, 82, 45); 
-  color: rgb(243, 216, 167);
+  background: rgb(29, 28, 28);
+  color: white;
 }
 
 body.dark-mode .laboratory,
 body.dark-mode .sidebar {
-  background: rgb(40, 35, 25); 
-  border-color: rgb(205, 133, 63);
+  background: rgb(29, 28, 28);
+  border-color: rgb(18, 17, 17);
 }
 
+body.dark-mode .laboratory h2,
+body.dark-mode .inventory-section h3,
+body.dark-mode .recipes-section h3,
+body.dark-mode .control-panel h3 {
+  color: white;
+}
+
+body.dark-mode .laboratory .lab-description,
+body.dark-mode .inventory-section,
+body.dark-mode .recipes-section,
+body.dark-mode .control-panel {
+  color: white;
+}
+
+body.dark-mode .laboratory{
+    box-shadow: 0 0 20px rgba(54, 53, 53, 0.3);
+}
+body.dark-mode .sidebar{
+    box-shadow: 0 0 20px rgba(54, 53, 53, 0.3);
+}
+
+body.dark-mode .inventory-section,
+body.dark-mode .recipes-section{
+    scrollbar-color: #1f1f1e #444442;
+}
 body.dark-mode .element {
-  background: rgb(222, 184, 135); 
-  color: rgb(255, 248, 220);
-  border-color: rgb(202, 132, 62);
+  background: 	#131415;
+  color: white;
+  border-color: lightgray;
 }
-
-body.dark-mode .menu-btn.active {
-  background: rgb(243, 216, 167);;
-  color: rgb(139, 69, 19);
+body.dark-mode .element:hover {
+  background: rgb(119, 118, 118);
 }
 
 body.dark-mode .menu-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgb(210, 180, 140);
+  background: #151414;
+  border-color: rgb(67, 66, 66);
+  color: white;
+}
+body.dark-mode .theme-btn {
+  background: #151414;
+  border-color: rgb(67, 66, 66);
+}
+body.dark-mode .menu-btn.active {
+  background: rgb(190, 188, 188);
+  color: black;
 }
 
 body.dark-mode .control-btn {
-  background: peru;
-  color: rgb(243, 216, 167);;
+  background: black;
+  color: white;
 }
 
 body.dark-mode .control-btn:hover {
-  background: rgb(218, 165, 32);;
+  background: rgb(115, 113, 113);
 }
 
 body.dark-mode a {
-  color: rgb(255, 215, 0);
+  color: white;
 }
 
-#theme-icon {
-  height: 20px;
-  width: 20px;
+body.dark-mode #mixing-zone{
+    color: rgb(203, 197, 197);
+    background-color: #292a2c;
+    border-color: rgb(51, 48, 48);
 }
 
-.theme-toggle button {
-  background: none;
-  border: none;
-  cursor: pointer;
+body.dark-mode .mix-container{
+    color: #131212;
+    background-color: #292a2c;
+    border-color: rgb(6, 6, 6);
+    border: dotted;
+
 }
+
+body.dark-mode .mixing-element{
+    color: #ffffff;
+    background-color: rgb(40, 39, 39);
+    border: 1px,solid,#353232;
+}
+
+body.dark-mode .mix-symbol{
+    color: #121111;
+}
+
+
+body.dark-mode .inventory-list{
+    background-color: #161718;
+}
+
+body.dark-mode .recipes-list{
+    background-color: #161718;
+}
+  
 @media (max-width:992px){
     main{
         flex-direction:column;
@@ -375,7 +442,8 @@ body.dark-mode a {
         gap: 1rem;
     }
 }
-@media(max-width: 600px){
+
+@media (max-width: 600px){
     header{
         padding:0.4rem 0.4rem;
     }
