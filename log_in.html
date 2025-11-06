@@ -20,6 +20,9 @@
     .card {
       background: rgba(255, 255, 255, 0.95);
       border-radius: 1rem;
+      padding:2rem;
+      width: 100%;
+      max-width: 400px;
     }
     h2, h3{
         font-family: 'Cinzel Decorative', cursive;
@@ -37,6 +40,11 @@
     .btn-custom:hover{
         background: linear-gradient(145deg,#e8c884, #c49b57);
         transform: translateY(-2px);
+    }
+    @media(max-width:576px){
+      .card{padding:1rem;}
+      h2{font-size: 1.5rem;}
+      h3{font-size: 1.2rem;}
     }
   </style>
 </head>
