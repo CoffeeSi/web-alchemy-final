@@ -1,13 +1,12 @@
 import { initDragDrop } from './drag-drop.js';
 import { initToggleTheme } from './theme.js';
-
+import { initRedirect } from './redirect.js';
 
 const menuBtns = document.querySelectorAll('.menu-btn');
 
 const inventorySection = document.querySelector('.inventory-section');
 const recipesSection = document.querySelector('.recipes-section');
 const controlPanel = document.querySelector('.control-panel');
-
 
 //hide elements if other is clicked
 function showPanel(panel) {
@@ -47,28 +46,6 @@ menuBtns.forEach(btn => {
     });
 });
 
-//redirect logic
-//1 redirect to help with faq and game info
-const fromHomeToHelp = document.querySelector('#toHelp');
-
-function returnToHelp(){
-    window.location.href = 'instructions.html';
-}
-
-if (fromHomeToHelp) fromHomeToHelp.addEventListener("click", returnToHelp);
-
-
-//2 redirect to log in page
-
-const fromHomeToLogIn = document.querySelector("#log-in-page");
-
-function returnToLogIn(){
-    window.location.href = "log_in.html";
-}
-
-if(fromHomeToLogIn) fromHomeToLogIn.addEventListener("click", returnToLogIn);
-
-
+initRedirect();
 initDragDrop();
 initToggleTheme();
-

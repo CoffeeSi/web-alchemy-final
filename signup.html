@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alchemist Registration ⚗️</title>
+  <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/styles/auth.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="card p-4 shadow" style="max-width: 400px; width:100%;">
+    <h2>⚗️ Alchemist</h2>
+
+    <!-- Sign Up Form -->
+    <form id="signup-form" class="mt-3">
+      <h3>Sign Up</h3>
+      <div class="mb-2">
+        <input type="text" id="signup-name" class="form-control" placeholder="Name" required>
+      </div>
+      <div class="mb-2">
+        <input type="email" id="signup-email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="mb-2">
+        <input type="password" id="signup-password" class="form-control" placeholder="Password" required minlength="6">
+      </div>
+      <button type="submit" class="btn btn-custom w-100">Sign Up</button>
+      <p class = "text-center mt-3">Have an account? <a href="login.html">Log in</a></p>
+    </form>
+  </div>
+  <script src="assets/js/signup.js"></script>
+</body>
+</html>
