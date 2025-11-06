@@ -1,3 +1,4 @@
+import { initToggleTheme } from './theme.js';
 
 const fromHelpToHome = document.querySelector('#toHome');
 
@@ -6,3 +7,5 @@ function returnToHome() {
 }
 
 if (fromHelpToHome) fromHelpToHome.addEventListener("click", returnToHome);
+
+initToggleTheme();

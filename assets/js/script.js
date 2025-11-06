@@ -8,6 +8,8 @@ const inventorySection = document.querySelector('.inventory-section');
 const recipesSection = document.querySelector('.recipes-section');
 const controlPanel = document.querySelector('.control-panel');
 
+
+//hide elements if other is clicked
 function showPanel(panel) {
     inventorySection.style.display = 'none';
     recipesSection.style.display = 'none';
@@ -32,7 +34,7 @@ function showPanel(panel) {
         recipesSection.style.height="250px"
     }
 }
-
+// active button logic
 menuBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         menuBtns.forEach(b => b.classList.remove('active'));
@@ -45,10 +47,11 @@ menuBtns.forEach(btn => {
     });
 });
 
+//redirect logic
+//1 redirect to help with faq and game info
 const fromHomeToHelp = document.querySelector('#toHelp');
 
 function returnToHelp(){
-    console.log("salam")
     window.location.href = 'instructions.html';
 }
 
