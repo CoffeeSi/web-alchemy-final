@@ -53,7 +53,6 @@ h1{
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
     animation: bounceIn 4s ease forwards;
-    opacity:0;
 }
 .enter-btn:hover{
     background: linear-gradient(145deg,#e8c884, #c49b57);
